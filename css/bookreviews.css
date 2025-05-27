@@ -1,0 +1,111 @@
+/* Reset and basic styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: #222;
+}
+/* Header styles */
+header {
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+/* Logo size */
+.logo {
+  width: 50px;
+}
+
+/* Navigation and avatar container */
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+/* Navigation links */
+nav a {
+  margin: 0 15px;  /* Space left and right of each link */
+  font-weight: bold;
+  text-decoration: none; /* Remove underline */
+  color: white;
+}
+/* User avatar */
+.user-avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+/* Main content area */
+main {
+  background: #eee;
+  border-radius: 30px;
+  margin: 30px;
+  padding: 30px;
+}
+/* Search bar container */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 15px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+/* Search input box */
+.search-bar input {
+  flex: 1;  /* Take up available space */
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: transparent; /* Transparent to show container bg */
+}
+/* Search icon/button */
+.search-icon {
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+/* Grid container for list of books */
+.book-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 25px;   /* Space between grid items */
+}
+/* Single book item container */
+.book-item {
+  display: flex; 
+  gap: 15px;  /* Space between image and info */
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  align-items: flex-start;
+}
+/* Book cover image */
+.book-item img {
+  width: 80px;
+  height: 110px;
+  object-fit: cover;   /* Crop and fill nicely */
+  border-radius: 8px;
+}
+/* Book info container */
+.book-info h3 {
+  margin: 0;
+  font-size: 16px;
+}
+/* Subtitle or author under book title */
+.book-info h3 span {
+  font-weight: normal;
+  font-size: 14px;
+  display: block;
+  margin-top: 3px;
+}
+/* Book description text */
+.book-info p {
+  font-size: 14px;
+  margin: 10px 0 0;
+  line-height: 1.4;
+}

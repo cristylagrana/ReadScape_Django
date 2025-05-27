@@ -1,0 +1,146 @@
+/* Basic page setup */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: #111;
+}
+/* Header section */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000;
+  padding: 15px 30px;
+}
+/* Logo image */
+.logo {
+  width: 50px;
+}
+/* Navigation links */
+nav a {
+  margin: 0 15px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* User profile image */
+.user-avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+/* Main content area */
+main {
+  padding: 20px;
+  background: #ccc;
+  border-radius: 25px;
+  margin: 20px;
+}
+/* Post input box */
+.post-box {
+  display: flex; /* Layout input and buttons in row */
+  align-items: center;
+  background: #eee;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+/* Input field inside post box */
+.post-box input {
+  flex: 1; /* Take available space */
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+/* Buttons next to post input */
+.post-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+/* Icon-style buttons */
+.icon-button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #555;
+  background-color: white;
+  font-size: 20px;
+  cursor: pointer; /* Show pointer on hover */
+}
+/* Each post box */
+.post {
+  background: #f5f5f5;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+/* User info in a post */
+.post-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+/* Main post content area */
+.post-content {
+  display: flex;
+  gap: 20px;
+}
+/* Post images */
+.post-images img {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  object-fit: cover; /* Make sure image fits well */
+  margin-bottom: 10px;
+}
+/* Post text beside images */
+.post-content p {
+  flex: 1;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.post-content {
+  display: flex;
+  gap: 20px;
+}
+/* Text area in post */
+.post-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* Paragraph style inside post text */
+.post-text p{
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0 0 10px 0;
+}
+/* Post stats area (like likes, comments) */
+.post-stats {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  color: #555;
+  flex-wrap: nowrap;
+}
+/* Individual stat item */
+.post-stats span {
+  background: #e0e0e0;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  cursor: default;
+}

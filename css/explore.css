@@ -1,0 +1,111 @@
+/* Remove default margin and set font and background */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: #222;
+}
+/* Header section at the top */
+header {
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between logo and right side */
+  padding: 15px 30px;
+}
+/* Logo image size */
+.logo {
+  width: 50px;
+}
+
+/* Group for nav and avatar */
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+/* Navigation links */
+nav a {
+  margin: 0 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+/* User avatar image */
+.user-avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+/* Main content container */
+main {
+  background: #eee;
+  border-radius: 30px;
+  margin: 30px;
+  padding: 30px;
+}
+/* Search bar section */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 15px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+/* Input inside search bar */
+.search-bar input {
+  flex: 1;  /* Take up remaining space */
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+}
+/* Search icon styling */
+.search-icon {
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+/* Grid layout for book items */
+.book-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 25px;  /* Space between books */
+}
+/* Each book item */
+.book-item {
+  display: flex;
+  gap: 15px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  align-items: flex-start;
+}
+/* Book cover image */
+.book-item img {
+  width: 80px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+/* Book title and author */
+.book-info h3 {
+  margin: 0;
+  font-size: 16px;
+}
+/* Author name */
+.book-info h3 span {
+  font-weight: normal;
+  font-size: 14px;
+  display: block;
+  margin-top: 3px;
+}
+/* Book description */
+.book-info p {
+  font-size: 14px;
+  margin: 10px 0 0;
+  line-height: 1.4;
+}

@@ -1,0 +1,114 @@
+/* Remove default spacing from all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* Make sizing easier to manage */
+  }
+
+/* Style for the whole page */
+  body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Georgia', serif;
+    min-height: 100vh;  /* Full screen height */
+    display: flex;
+    flex-direction: column; /* Stack elements top to bottom */
+    justify-content: center;
+    align-items: center;
+    position: relative;  /* Needed for navbar positioning */
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;  /* Move nav items to the right */
+    padding: 20px 40px;
+    position: absolute;  /* Position on top of the page */
+    top: 0;
+    right: 0;
+  }
+  /* Navigation links container */
+  .nav-links {
+    display: flex;
+    gap: 20px; /* Space between links */
+  }
+  /* Individual nav link */
+  .nav-link {
+    color: #fff;
+    text-decoration: none;  /* Remove underline */
+    font-size: 16px;
+    font-family: 'Georgia', serif;
+    position: relative; /* Needed for underline effect */
+    padding-bottom: 5px;
+  }
+  /* Underline animation */
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: width 0.3s ease;
+  }
+  /* Show underline if link is active */
+  .nav-link.active::after {
+    width: 100%;
+  }
+  
+  
+  /* Main Content */
+  .container {
+    display: flex;
+    flex-direction: row;  /* Side-by-side layout */
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    max-width: 1200px;
+  }
+  /* Left side - logo section */
+  .logo-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 30px;
+  }
+  /* Logo image */
+  .logo {
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #333;
+  }
+  /* Right side - welcome text */
+  .welcome-text {
+    flex: 2;
+    padding-left: 40px;
+  }
+  /* Welcome title */
+  .welcome-text h1 {
+    font-size: 48px;
+
+    margin-bottom: 10px;
+  }
+  /* Make each word in <span> show on new line */
+  .welcome-text h1 span {
+    display: block;
+  }
+  /* Subtitle under the title */
+  .welcome-text h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  /* Paragraph text */
+  .welcome-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #ccc;
+    max-width: 600px;
+  }
+  
